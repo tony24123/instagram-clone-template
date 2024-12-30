@@ -72,48 +72,49 @@
     background-color: #000;
 }
 
-.carousel-container {
+.feed-container .carousel-container {
     position: relative;
     width: 100%;
     height: 100%;
     overflow: hidden;
 }
 
-.carousel-track {
+.feed-container .carousel-track {
     display: flex;
     width: 100%;
     height: 100%;
     transition: transform 0.3s ease-in-out;
 }
 
-.carousel-track img {
+.feed-container .carousel-track img {
     flex: 0 0 100%;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.carousel-prev,
-.carousel-next {
+.feed-container .carousel-prev,
+.feed-container .carousel-next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     background: rgba(255, 255, 255, 0.8);
     border: none;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    width: 22px;
+    height: 22px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     z-index: 1;
+    font-size: 0.8em;
 }
 
-.carousel-prev { left: 10px; }
-.carousel-next { right: 10px; }
+.feed-container .carousel-prev { left: 10px; }
+.feed-container .carousel-next { right: 10px; }
 
-.carousel-indicators {
+.feed-container .carousel-indicators {
     position: absolute;
     bottom: 16px;
     left: 50%;
@@ -122,14 +123,14 @@
     gap: 4px;
 }
 
-.indicator {
+.feed-container .indicator {
     width: 6px;
     height: 6px;
     border-radius: 50%;
     background-color: #a8a8a8;
 }
 
-.indicator.active {
+.feed-container .indicator.active {
     background-color: #0095f6;
 }
 
@@ -170,11 +171,6 @@
 /* Post Content */
 .post-content {
     padding: 0 16px;
-}
-
-.hashtag {
-    color: #0095f6;
-    text-decoration: none;
 }
 
 .post-text {
@@ -244,6 +240,11 @@
     background: none;
     padding: 0;
     cursor: pointer;
+}
+
+.hashtag {
+    color: #0095f6;
+    text-decoration: none;
 }
 
 /* Comment Form */
@@ -319,6 +320,29 @@
         transform: translate(-50%, -50%) scale(1);
     }
 }
+
+.post-caption-truncated {
+    display: inline;
+}
+
+.more-button {
+    background: none;
+    border: none;
+    color: #8e8e8e;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 0;
+    margin-top: 4px;
+}
+
+.more-button:hover {
+    color: #262626;
+}
+
+.full-text {
+    white-space: pre-wrap;  /* 줄바꿈 유지 */
+}
+
 
 /* 반응형 스타일 */
 @media (max-width: 640px) {
