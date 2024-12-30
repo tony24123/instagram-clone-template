@@ -172,6 +172,11 @@
     padding: 0 16px;
 }
 
+.hashtag {
+    color: #0095f6;
+    text-decoration: none;
+}
+
 .post-text {
     font-size: 14px;
     line-height: 1.5;
