@@ -200,8 +200,7 @@
 
 /* Comments Section */
 .post-comments {
-    border-top: 1px solid #efefef;
-    padding: 16px;
+    padding: 0 16px;
 }
 
 .comment-list {
@@ -247,7 +246,6 @@
     display: flex;
     align-items: center;
     border-top: 1px solid #efefef;
-    padding-top: 16px;
 }
 
 .comment-input {
