@@ -1,5 +1,9 @@
 -- 데이터베이스 생성
+<<<<<<< HEAD
 CREATE DATABASE instagram_clone
+=======
+CREATE DATABASE instagram
+>>>>>>> d80e3810bdd39de7456f9c3d0e1a1d42e02771db
     DEFAULT CHARACTER SET utf8mb4
     DEFAULT COLLATE utf8mb4_unicode_ci;
 

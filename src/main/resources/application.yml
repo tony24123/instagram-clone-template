@@ -4,7 +4,11 @@ server:
 spring:
   datasource:
     driver-class-name: org.mariadb.jdbc.Driver
+<<<<<<< HEAD
     url: jdbc:mariadb://localhost:3306/instagram_clone
+=======
+    url: jdbc:mariadb://localhost:3306/instagram
+>>>>>>> d80e3810bdd39de7456f9c3d0e1a1d42e02771db
     username: root
     password: mariadb
   mvc:
